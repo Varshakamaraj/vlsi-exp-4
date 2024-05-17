@@ -1,21 +1,27 @@
-EXP.NO: 04
+EXP.NO: 04  
 
-DATE: 26.03.2024
+DATE: 26/03/2024
 
 SIMULATION OF IMPLEMENTATION SEQUENTIAL LOGIC CIRCUITS
+
 
 AIM: To simulate the following circuits using Vivado 2023.2.
 
 1) SR Flip Flop
-2) JK Flip Flop  
-3) T- Flip Flop
-4) D-Flip Flop
-6) Up-down Counter
-7) Mod10 Counter
-8) Ripple Carry Counter
-   
-APPARATUS REQUIRED:
 
+2) JK Flip Flop
+
+3) T- Flip Flop
+
+4) D-Flip Flop
+
+5) Up-down Counter
+
+6) Mod10 Counter
+
+7) Ripple Carry Counter 
+
+APPARATUS REQUIRED: 
 VIVADO 2023.2
 
 PROCEDURE: 
@@ -36,10 +42,9 @@ SR FLIP FLOP:
 
 LOGIC DIAGRAM:
 
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/bab44006-70a7-4a65-8bb4-4f16304a28ed)
 
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/47aa2261-0372-42cc-b4a0-b83eaff73601)
 
- 
 VERILOG CODE:
 
 module sr(s,r,clk,rst,q);
@@ -80,15 +85,14 @@ endmodule
 
 OUTPUT WAVEFORM:
 
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/a954a3e2-b876-4d37-a152-5f0a391e03e2)
 
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/93c1efbe-38e4-4df7-aa9e-581043b07668)
 
- 
 JK FLIP FLOP:
 
 LOGIC DIAGRAM:
 
-
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/b7b36f12-4e47-41db-b9e7-73928dc0fc57)
 
  
 VERILOG CODE:
@@ -102,6 +106,7 @@ output reg q;
 always @ (posedge clk)
 
 begin 
+
 if (rst==1)
 
 q=1'b0;
@@ -130,16 +135,14 @@ endmodule
 
 OUTPUT WAVEFORM:
 
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/ec5e7e59-561c-4cfd-ac0c-95ea8c650aa2)
 
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/d05b7bb0-7dcc-43f7-8ffc-90059f56d20f)
-
+ 
 
 T-FLIP FLOP:
-
 LOGIC DIAGRAM:
 
-
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/65265778-053b-4a6e-88f7-1a1acb32b49e)
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/d9b43fed-9bc9-45d0-810b-9e66cab17fa7)
 
  
 VERILOG CODE:
@@ -159,31 +162,24 @@ if (rst==1)
 q=1'b0;
 
 else if (t==0)
-
 q=q;
-
 else
-
 q=~q;
-
 end
-
 endmodule
 
 OUTPUT WAVEFORM:
 
-
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/261e5cb3-5bba-4f0c-9e90-4db6b5d5fbff)
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/33d7e0f4-f19d-40ee-8719-536f579bdfe1)
 
  
 D-FLIP FLOP:
 
 LOGIC DIAGRAM:
 
+ ![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/9b4145fb-ed07-4125-b1a8-c607ed0cfd00)
 
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/4a579aae-f45f-448e-8681-c55becae90a1)
 
- 
 VERILOG CODE:
 
 module d(d,clk,rst,q);
@@ -208,17 +204,17 @@ end
 
 endmodule
 
-OUTPUT WAVEFORM: 
+OUTPUT WAVEFORM:
 
-
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/7281ea56-3493-4289-b761-d5ccdca38840)
+ ![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/f5fa2dc3-e631-4ada-a88f-520afe6ea4a5)
 
 
 UPDOWN COUNTER:
 
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/12b53cbd-bb4f-4bfe-8fac-23f93b30385d)
 
- ![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/cbd2765b-a5e4-4754-93db-862567570695)
  
+
 
 VERILOG CODE:
 
@@ -248,16 +244,15 @@ end
 
 endmodule
 
+
 OUTPUT WAVEFORM:
-
-
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/09ca14fa-b854-4188-815a-b307bce3b961)
+ 
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/d1835c8c-f32a-4638-99c7-8f4200bb18c9)
 
  
 MOD 10 COUNTER:
 
-
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/a574586f-b465-4f3e-96bf-97f218371488)
+![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/81f1a7bd-156a-405f-953c-ea5192d8eb72)
 
  
 VERILOG CODE:
@@ -286,16 +281,14 @@ endmodule
 
 OUTPUT WAVEFORM:
 
+ ![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/aa746858-453d-489e-b9f0-bad6ff08dad3)
 
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/9eaba5fd-900d-48ff-ae64-960b8a4e58a7)
 
- 
 RIPPLE CARRY COUNTER:
 
 LOGIC DIAGRAM:
 
-
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/3b3b2219-eb0e-4b07-a5ae-5114741b02b0)
+ ![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/1c09e2c1-41e1-4847-87b4-a08bb04f6b1a)
 
 
 VERILOG CODE :
@@ -330,6 +323,7 @@ not n1(d, q);
 
 endmodule
 
+
 module D_FF(q, d, clk, reset);
 
 output q;
@@ -352,12 +346,11 @@ endmodule
 
 OUTPUT WAVEFORM:
 
+ ![image](https://github.com/Karthikeyan8296/VLSI-EXP-4/assets/165583967/5f11551e-bb62-49a9-a0d3-f61b11172e61)
 
-![image](https://github.com/Padmeshwaraan/VLSI-EXPERIMENT-4/assets/160568747/7e323b1c-ab8f-4627-bfd7-e9ede3608946)
 
- 
+
 RESULT:
-
-Thus the simulation of sequential circuits is done and outputs are verified
+	Thus the simulation of sequential circuits is done and outputs are verified
 Successfully.
 
